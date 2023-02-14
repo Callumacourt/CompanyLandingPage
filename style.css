@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.header {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 20px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  color: white;
+  background-color: black;
+  row-gap: 5vh;
+}
+
+.title {
+  grid-row-start: 2;
+  display: grid;
+  justify-items: center;
+  font-size: 10vmin;
+  font-weight: bold;
+}
+
+.TitleName {
+  border-bottom: 0.5vmin solid #542cf2;
+  margin-bottom: 3vmin;
+}
+
+.signUp {
+  height: 20px;
+  padding: 4vmin 7vmin;
+  border-radius: 10vmin;
+  border: none;
+  grid-row-start: 4;
+  background-color: #542cf2;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 3vmin;
+}
+
+.signUp:hover,
+.meetingBooker:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.logoDummy {
+  height: 40vmin;
+  grid-row-start: 3;
+}
+
+.title {
+  margin-top: 2vh;
+}
+
+.intro {
+  grid-row-start: 2;
+  font-size: 3vmin;
+  max-width: 40vw;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.section2 {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-content: center;
+}
+
+.content,
+.meetingBook {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 2vmin;
+}
+
+.line,
+.lineBelowMeeting,
+.lineAboveSales,
+.lineBelowSales {
+  height: 0.5vmin;
+  background-color: white;
+  border-radius: 500px;
+}
+
+.lineBelowMeeting,
+.lineBelowSales {
+  margin-top: 10vh;
+}
+
+.lineAboveSales {
+  width: 25%;
+  background-color: #542cf2;
+}
+
+.line,
+.lineBelowMeeting,
+.lineBelowSales {
+  width: 40vw;
+  opacity: 0.2;
+}
+
+.callHeader,
+.meetingHeader {
+  font-size: 5vmin;
+}
+
+.meetingBooker {
+  background-color: #542cf2;
+  font-size: 2vmin;
+  padding: 2vmin 5vmin;
+  border-radius: 50vmin;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.meetingContent,
+.callContent {
+  max-width: 50vmin;
+  text-align: center;
+}
+
+.meetingForm {
+  display: none;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1vh;
+  margin-top: 2vh;
+  text-align: center;
+}
+
+.displayMeetingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #542cf2;
+  width: 100vmin;
+  font-size: 2vmin;
+  height: 50vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 10px solid wheat;
+  border-radius: 3vmin;
+}
+
+.meetingSubmit {
+  background-color: wheat;
+  color: #542cf2;
+  font-size: 1.5vmin;
+  padding: 20px 100px;
+}
+
+ul {
+  list-style-type: none;
+}
