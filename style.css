@@ -1,3 +1,17 @@
+@font-face {
+  font-family: Tav;
+  src: url(Taviraj-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url('Quicksand-VariableFont_wght.ttf');
+}
 body {
   margin: 0;
   padding: 0;
@@ -82,6 +96,7 @@ body {
   justify-items: center;
   align-items: center;
   font-size: 2vmin;
+  font-family: 'Quicksand';
 }
 
 .line,
@@ -123,6 +138,7 @@ body {
   color: white;
   font-weight: bold;
   border: none;
+  font-family: 'Quicksand';
 }
 
 .meetingContent,
@@ -130,10 +146,12 @@ body {
   max-width: 50vmin;
   text-align: center;
   font-size: 3vmin;
+  margin-bottom: 2vh;
 }
 
 .meetingForm {
   display: none;
+  font-family: 'Quicksand';
 }
 
 li {
@@ -152,13 +170,14 @@ input {
 
 .displayMeetingForm {
   display: flex;
+  opacity: 1;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   background-color: #542cf2;
   width: 80vmin;
   font-size: 3vmin;
-  height: 50vh;
+  height: 65vh;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -173,8 +192,86 @@ input {
   font-size: 1.5vmin;
   padding: 20px 100px;
   font-size: 3vmin;
+  font-family: 'Quicksand';
 }
 
 ul {
   list-style-type: none;
+  padding-left: 0;
+}
+
+.formSignUp {
+  background-color: #542cf2;
+  margin-top: 15vh;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  font-size: 2vmin;
+  padding-left: 0;
+}
+
+.formSignUp h1 {
+  font-size: 7vmin;
+  font-family: 'Tav';
+}
+
+.formSignUp input,
+.formSignUp textarea {
+  background-color: black;
+  color: white;
+  opacity: 0.3;
+  height: 5vh;
+  border-radius: 2vmin;
+  width: 40vw;
+  border: 1vmin solid black;
+  padding: 1.5vmin 3vmin;
+  font-size: 2vmin;
+}
+
+.formSignUp textarea {
+  height: 20vh;
+}
+
+.formSubmit {
+  width: fit-content;
+  padding: 2vmin 3vmin;
+  height: 7vh;
+  border-radius: 1vmin;
+  border: none;
+  color: #542cf2;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  letter-spacing: 0.25vw;
+  font-size: 2vmin;
+}
+
+.submitContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 2.1vmin;
+}
+
+.submitContainer button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.footer {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vmin;
+}
+
+.copywright {
+  opacity: 0.6;
+  margin-bottom: 2vh;
 }
